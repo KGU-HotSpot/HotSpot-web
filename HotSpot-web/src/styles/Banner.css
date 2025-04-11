@@ -1,0 +1,66 @@
+.Banner-container {
+    position: fixed;
+    width: 100%;
+    height: 64px;
+    top: 0;
+    left: 0;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    display: flex;
+}
+
+.navigater {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    
+}
+
+.logo {
+    object-fit: cover;
+    width: 32px;
+    height: 32px;
+}
+
+.navi-items {
+    display: flex;
+    gap: 20px;
+}
+
+.navi-item-maps {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.navi-item-recommend {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.navi-item-breakpoint {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.navi-item-data {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.4);
+}
