@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Banner from './components/Banner/Banner'
+import Banner from '/src/components/Banner/Banner'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -7,6 +7,7 @@ function App() {
   return (
     <>
       <Banner />
+      
     </>
   )
 }
