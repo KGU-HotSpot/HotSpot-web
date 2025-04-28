@@ -1,5 +1,7 @@
+import React from 'react';
+
 import Slider from 'rc-slider';
-import 'rc-slider/assets/index.css'
+import 'rc-slider/assets/index.css';
 import { useState, useEffect } from 'react';
 
 import '../../../styles/components/HeatMap/Filter/Filter.css';
@@ -106,23 +108,39 @@ function Filter() {
                 <div className='Filter-business-district-section'>
                     <div className='Filter-options-title'>상권 선택</div>    
                     <div className='Filter-business-district-options'>
-                        <div>음식점
+                        <div className='business-district-items'>음식점
                         <img src="/src/assets/icons/arrow.svg" alt="화살표" className='arrow-img'/>
                         </div>
-                        <div>한식
+                        <div className='business-district-items'>한식
                         <img src="/src/assets/icons/arrow.svg" alt="화살표" className='arrow-img'/>
                         </div>
                     </div>
+
+                    <div className='business-district-plus'>
+                    <img src="/src/assets/icons/plus.svg" alt="화살표" className='plus-img'/>
+                    조건 추가하기
+                    </div>
+
                     <div className="Filter-line" />
                 </div>
 
                 {/* 매출액에 관한 내용, input을 통해 금액을 산정 */}
-                <div className='Filter-options-title'>매출액 산정
-                    <input type="number" />
+                <div className='Filter-sales-section'>
+                    <div className='Filter-options-title'>매출액 산정</div>
+                    <div className='sales-input-wrapper'>
+                        <input 
+                            className='sales-input' 
+                            type="input" 
+                            placeholder='원하는 매출액을 입력하세요.'
+                        />
+                        <button className='sales-button'>
+                            <img src="/src/assets/icons/arrow.svg" alt="화살표" className='sales-button-icon' />
+                        </button>
+                    </div>
                 </div>
 
                 {/* button을 통해 조건을 삭제 */}
-                <button className='Filter-delete-conditions'>조건 삭제</button>
+                <button className='Filter-delete-button'>조건 삭제</button>
 
 
             </div>

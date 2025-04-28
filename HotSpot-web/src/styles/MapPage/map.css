@@ -1,3 +1,8 @@
+.content-wrapper {
+    position: relative;
+    z-index: 10;
+}
+
 .map-rapper {
     position: fixed;
     top: 107px;
@@ -5,7 +10,6 @@
     transform: translateX(-50%);
     display: flex;
     gap: 10px;
-    
 }
 
 .map-state {
@@ -22,6 +26,7 @@
     display: flex;
     align-items: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    background-color: white;
 }
 
 .map-county {
@@ -38,6 +43,7 @@
     display: flex;
     align-items: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    background-color: white;
 }
 
 .map-city {
@@ -54,6 +60,7 @@
     display: flex;
     align-items: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    background-color: white;
 }
 
 .arrow-img {

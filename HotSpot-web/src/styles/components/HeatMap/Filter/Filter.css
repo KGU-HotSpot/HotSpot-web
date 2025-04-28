@@ -17,7 +17,7 @@
     gap: 26px;
     overflow-y: auto;
     position: fixed;
-    
+    background-color: white;
 }
 
 /* 필터 타이틀에 대한 스타일 */
@@ -54,7 +54,7 @@
     transform: translateX(-50%);
 }
 
-/* range의 데한 스타일들 */
+/* range의 데한 스타일 */
 input[type="range"].styled-range {
     appearance: none;
     -webkit-appearance: none;
@@ -74,11 +74,13 @@ input[type="range"].styled-range {
 
 }
 
+/* range의 데한 스타일 */
 input[type="range"].styled-range::-webkit-slider-runnable-track {
     height: 8px;
     border-radius: 5px;
 }
 
+/* range의 데한 스타일 */
 input[type="range"].styled-range::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 14px;
@@ -88,7 +90,7 @@ input[type="range"].styled-range::-webkit-slider-thumb {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin-top: -2px;
     cursor: pointer;
-    border: 1px solid #d5d5d5;
+    border: 1px solid #949191;
     transition: background 0.3s ease;
 }
 
@@ -136,35 +138,40 @@ input[type="range"].styled-range::-webkit-slider-thumb {
     margin-bottom: 12px;
 }
 
+/* 보증금 슬라이더에 대한 스타일 */
 .Filter-deposit-range-wrapper .rc-slider-rail {
     height: 4px;
     border-radius: 5px;
     background-color: #e0e0e0;
 }
 
+/* 보증금 슬라이더에 대한 스타일 */
 .Filter-deposit-range-wrapper .rc-slider-track {
     height: 4px;
     border-radius: 5px;
     background-color: #F28080;
 }
 
+/* 보증금 슬라이더에 대한 스타일 */
 .Filter-deposit-range-wrapper .rc-slider-handle {
     width: 14px;
     height: 14px;
     margin-top: -5px;
-    border: 1px solid #d5d5d5;
+    border: 1px solid #949191;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     opacity: 1;
 }
 
+/* 보증금 슬라이더에 대한 스타일 */
 .Filter-deposit-range-wrapper .rc-slider-handle:active {
     opacity: 1;
     background-color: white;
-    border: 1px solid #d5d5d5;
+    border: 1px solid #949191;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+/* 보증금 슬라이더에 대한 스타일 */
 .Filter-deposit-elements {
     gap: 2px;
     display: flex;
@@ -172,6 +179,7 @@ input[type="range"].styled-range::-webkit-slider-thumb {
     align-items: center;
 }
 
+/* 보증금 슬라이더에 대한 스타일 */
 .Filter-deposit-elements-center {
     font-size: 10px;
     font-weight: 500;
@@ -179,36 +187,143 @@ input[type="range"].styled-range::-webkit-slider-thumb {
     text-align: center;
 }
 
+/* 보증금 슬라이더에 대한 스타일 */
 .Filter-deposit-elements-left {
     display: flex;
     flex-direction: column;
 }
 
+/* 보증금 슬라이더에 대한 스타일 */
 .Filter-deposit-elements-right {
     display: flex;
     flex-direction: column;
 }
 
+/* 상권 선택란에 대한 스타일 */
 .Filter-business-district-section {
     display: flex;
     flex-direction: column;
     gap: 9px;
 }
 
+/* 상권 선택란에 대한 스타일 */
 .Filter-business-district-options {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
+
+/* 상권 선택란에 대한 스타일 */
+.business-district-items {
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    gap: 9px;
+    flex-direction: row;
+    align-items: center;
+    border: #949191 1px solid;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* 상권 선택란에 대한 스타일 */
+.business-district-plus {
+    height: 18px;
+    width: 85px;
+    padding: 4px 8px;
+    font-size: 8px;
+    font-weight: 500;
+    color: #949191;
+    display: flex;
+    gap: 9px;
+    flex-direction: row;
+    align-items: center;
+    border: #949191 1px solid;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* 상권 선택란에 대한 스타일 */
+.plus-img {
+    width: 10px;
+    height: 10px;
+}
+
+/* 매출액 산정에 대한 스타일*/
+.Filter-sales-section {
     display: flex;
     flex-direction: column;
     gap: 9px;
 }
 
+/* 매출액 산정에 대한 스타일*/
+.sales-input-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* 매출액 산정(input)에 대한 스타일*/
+.sales-input {
+    padding: 7px 30px 7px 7px;
+    width: 100%;
+    border: 2px solid #949191;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 9px;
+    font-weight: 500;
+    color: #949191;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    outline: none;
+}
+/* 매출액 산정(button)에 대한 스타일*/
+.sales-button {
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
 
 
+.sales-button-icon {
+    width: 10px;
+    height: 10px;
+    transform: rotate(180deg);
+}
+
+.sales-input::placeholder {
+    font-size: 9px;
+}
+
+/*조건 삭제 버튼*/
+.Filter-delete-button {
+    margin: 0 auto;
+    padding: 9px 9px;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    border: 2px solid #949191;
+    background-color: white;
+    border-radius: 15px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
 
 /* 필터 사이에 존재하는 얇은 선 */
 .Filter-line {
     width: 100%;
     height: 1px;
-    background-color: #d5d5d5;
+    background-color: #949191;
 }
 
 
