@@ -1,14 +1,16 @@
-import { useState } from 'react'
-import Banner from './components/Banner/Banner'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MainPage from "./pages/MainPage/MainPage";
+import SearchResultPage from "./pages/SearchResultPage";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Banner />
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/search" element={<SearchResultPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
